@@ -28,10 +28,18 @@
   border: transparent;
 }
 
-.cabecalho-menu-i:hover {
-  transition: 0.2s;
-  border-bottom: 4px solid #cb9832;
-  color: black;
+.cabecalho-menu-i:after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: #cb9832;
+  transition: 0.4s;
+  margin-top: 2px;
+}
+
+.cabecalho-menu-i:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 800px) {
