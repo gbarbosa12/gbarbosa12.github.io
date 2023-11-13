@@ -1,7 +1,7 @@
-function initIntroducao() {
-  const introducao = document.querySelector(".introducao");
+// function initIntroducao() {
+//   const introducao = document.querySelector(".introducao");
 
-  introducao.classList.add(".ativo");
-}
+//   introducao.classList.add(".ativo");
+// }
 
-initIntroducao();
+// initIntroducao();
