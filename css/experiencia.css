@@ -1,74 +1,94 @@
 #experiencia {
-  /* background-color: pink; */
   max-width: 1440px;
   margin-bottom: 150px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 2.2rem 6rem 0rem 12rem;
+  padding: 10rem 6rem 0rem 12rem;
 }
 
 .experiencia-titulo {
-  color: #e0e0e0;
   text-transform: uppercase;
-  font-size: 8.75rem;
-  font-weight: bold;
-  line-height: 1.1;
-  margin-bottom: 2rem;
+  color: #2b2b2b;
+  font-size: 72px;
+  margin-bottom: 4rem;
+  text-align: start;
+  padding: 0;
 }
 
-.experiencia-descricao {
+.experiencia-titulo span {
+  font-size: 80px;
+  color: #deac47;
+}
+
+p,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+#projetos {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8rem;
+  max-width: 1200px;
+  margin: auto;
   font-size: 1.5rem;
-  color: #525252;
-  line-height: 1.3;
-  margin-bottom: 3rem;
 }
 
-strong {
-  color: #292929;
-}
-
-.experiencia-habilidades-i {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #f0f0f0;
-  margin-bottom: 2rem;
+.projetos-lista {
   border-radius: 5px;
-  padding: 18px 26px;
-  height: 6.5rem;
-  position: relative;
+  width: 315px;
 }
 
-.experiencia-habilidades-i h3 {
-  font-size: 18px;
-  margin-bottom: 0.9rem;
+.projetos-lista li {
+  background-color: #f0f0f0;
+  color: #3e3e3e;
+  text-align: left;
+  list-style-type: none;
+  padding: 18px 32px;
 }
 
-.experiencia-habilidades-i p,
-li {
-  font-size: 14px;
-}
-
-.experiencia-habilidades-i ul {
+.projetos-descricao {
   display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
+  flex-direction: column;
+  margin-top: 2.5rem;
 }
 
-.experiencia-habilidades-i li {
-  text-align: center;
-  padding: 4px 8px;
-  background-color: #fff;
-  margin-bottom: 0.5rem;
-  border-radius: 4px;
+.projetos-descricao h2 {
+  color: #2b2b2b;
+  font-size: 36px;
+  margin-bottom: 2rem;
 }
 
-.tecnologias {
-  text-align: end;
+.projetos-descricao p {
+  color: #525252;
+  font-size: 24px;
 }
 
-.experiencia-decoracao {
-  position: absolute;
-  left: -10px;
-  top: 50px;
+[data-tab="content"] section {
+  display: none;
+}
+
+[data-tab="content"] section.ativo {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-tab="content"] section.ativo.show-right {
+  animation: show-right 0.5s forwards;
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+[data-tab="list"] li.ativo {
+  border-left: 8px solid #deac47;
+  font-weight: bold;
+  transition: 0.2s;
 }
