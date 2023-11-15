@@ -6,34 +6,40 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Gabriel Barbosa - Desenvolvedor Front-end e Enxadrista</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- CABEÇALHO -->
-    <header class="cabecalho">
-      <!-- LOGO -->
-      <section class="cabecalho-logo">
-        <img src="img/Gabriel Barbosa.svg" alt="Logo" />
-      </section>
+    <header class="cabecalho-bg">
+      <div class="cabecalho">
+        <!-- LOGO -->
+        <section class="cabecalho-logo">
+          <img src="img/Gabriel Barbosa.svg" alt="Logo" />
+        </section>
 
-      <!-- MENU -->
-      <section>
-        <ul class="cabecalho-menu">
-          <li>
-            <a class="cabecalho-menu-i" href="#experiencia">Experiência</a>
-          </li>
-          <li><a class="cabecalho-menu-i" href="#formacao">Formação</a></li>
-          <li><a class="cabecalho-menu-i" href="#contato">Contato</a></li>
-        </ul>
-      </section>
+        <!-- MENU -->
+        <section>
+          <ul class="cabecalho-menu">
+            <li>
+              <a class="cabecalho-menu-i" href="#projetos">Projetos</a>
+            </li>
+            <li><a class="cabecalho-menu-i" href="#formacao">Formação</a></li>
+            <li><a class="cabecalho-menu-i" href="#contato">Contato</a></li>
+          </ul>
+        </section>
+      </div>
     </header>
 
     <!-- CONTEÚDO -->
     <main>
       <!-- INTRODUÇÃO -->
-      <section class="introducao js-introducao">
+      <section class="introducao-bg">
+        <div class="introducao">
           <img
           class="introducao-imagem"
           src="./img/fotoPerfil.jpg"
@@ -49,57 +55,59 @@
             Localizado em Florianópolis
             <img src="./img/localizacao.svg" alt="local-icon" />
           </h2>
+        </div>
         </section>
       </section>
 
       <!-- PROJETOS -->
-       <section aria-label="experiencia" id="experiencia">
-
-        <h2 class="experiencia-titulo">Projetos<span>.</span></h2>
-        <div id="projetos">
+      <section id="projetos" class="projetos-bg">
+        <div class="projetos">
+        <h2 class="projetos-titulo">Projetos<span>.</span></h2>
+        <div>
           <ul class="projetos-lista" data-tab="list">
             <li>Bikcraft</li>
             <li>Calculadora</li>
             <li>Secret Word</li>
             <li>Animais Fantasticos</li>
           </ul>
-    
+
           <div class="projetos-descricao" data-tab="content">
             <section data-anime="show-right">
               <h2>Bikcraft</h2>
               <p>
-                Projeto de um site de vendas de Bicicletas utilizando as linguagens
-                de HTML e CSS. Aplicando técnicas de UI Design.
+                Projeto de um site de vendas de Bicicletas utilizando as
+                linguagens de HTML e CSS. Aplicando técnicas de UI Design.
               </p>
             </section>
-    
+
             <section data-anime="show-right">
               <h2>Calculadora</h2>
               <p>
-                Projeto de uma calculadora utilizando as linguagens de HTML, CSS e
-                JS. Aplicando técnicas de UI Design.
+                Projeto de uma calculadora utilizando as linguagens de HTML, CSS
+                e JS. Aplicando técnicas de UI Design.
               </p>
             </section>
-    
+
             <section data-anime="show-right">
               <h2>Secret Word</h2>
               <p>
-                Projeto de um jogo utilizando React. O jogo consiste em descobrir a
-                palavra correta baseado-se em uma dica e nas letras que já estão
-                preenchidas
+                Projeto de um jogo utilizando React. O jogo consiste em
+                descobrir a palavra correta baseado-se em uma dica e nas letras
+                que já estão preenchidas
               </p>
             </section>
-    
+
             <section data-anime="show-right">
               <h2>Animais Fantásticos</h2>
               <p>
-                Projeto de um site de sobre animais utilizando HTML, CSS e técnicas
-                avançadas de JavaScript, como js assincorno e requisição de API
-                externa.
+                Projeto de um site de sobre animais utilizando HTML, CSS e
+                técnicas avançadas de JavaScript, como js assincorno e
+                requisição de API externa.
               </p>
             </section>
           </div>
         </div>
+      </div>
       </section>
 
       <!-- FORMAÇÃO -->
@@ -166,25 +174,43 @@
     </main>
 
     <!-- RODAPÉ -->
-    <footer id="contato">
-      <div>
+    <footer id="contato" class="contato-bg">
+      <div class="contato">
+        <h2 class="contato-titulo">Contatos<span>.</span></h2>
         <ul class="links">
-          <li><a href="https://www.linkedin.com/in/gabrielbarbosadoamaral/" target="_blank" class="contato-item">
-            <p>LinkedIn</p>
-            <p class="contato-valor">@gabrielbarbosadoamaral</p>
-          </a></li>
-          <li><a href="https://github.com/gbarbosa12" target="_blank" class="contato-item">
-            <p>GitHub</p>
-            <p class="contato-valor">@gbarbosa12</p>
-          </a></li>
-          <li><a href="/" target="_blank" class="contato-item">
-            <p>WhatApp</p>
-            <p class="contato-valor">(48) 98456-8954</p>
-          </a></li>
-          <li><a href="/" target="_blank" class="contato-item">
-            <p>E-mail</p>
-            <p class="contato-valor">gabriel2012amaral@gmail.com</p>
-          </a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/gabrielbarbosadoamaral/"
+              target="_blank"
+              class="contato-item"
+            >
+              <p>LinkedIn</p>
+              <p class="contato-valor">@gabrielbarbosadoamaral</p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/gbarbosa12"
+              target="_blank"
+              class="contato-item"
+            >
+              <p>GitHub</p>
+              <p class="contato-valor">@gbarbosa12</p>
+            </a>
+          </li>
+          <li>
+            <a href="/" target="_blank" class="contato-item">
+              <p>WhatApp</p>
+              <p class="contato-valor">(48) 98456-8954</p>
+            </a>
+          </li>
+          <li>
+            <a href="/" target="_blank" class="contato-item">
+              <p>E-mail</p>
+              <p class="contato-valor">gabriel2012amaral@gmail.com</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
     <script src="js/script.js"></script>
