@@ -1,26 +1,41 @@
-.formacao {
-  max-width: 14600px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 5rem 6rem 4rem 12rem;
-  color: #fff;
+.formacao-bg {
+  width: 100%;
   background-color: #141414;
 }
 
+.formacao {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 6rem 0rem;
+  color: #ffffff;
+}
+
+.formacao-conteudo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7rem;
+  margin: 0 8rem;
+}
+
 .formacao-titulo {
-  color: #000;
+  display: inline-block;
   text-transform: uppercase;
-  font-size: 8.75rem;
-  font-weight: bold;
-  line-height: 1.1;
-  margin-bottom: 2rem;
+  color: #bebeba;
+  font-size: 78px;
+  margin-bottom: 4.5rem;
+  margin-left: 8rem;
+}
+
+.formacao-titulo span {
+  font-size: 80px;
+  color: #deac47;
 }
 
 .formacao-descricao {
   font-size: 1.5rem;
-  color: #8f8f8f;
+  grid-column: 1fr / 2;
   line-height: 1.3;
-  margin-bottom: 3.75rem;
+  color: #8f8f8f;
 }
 
 .formacao-descricao strong {
@@ -30,8 +45,8 @@
 .formacao-academica {
   display: flex;
   flex-direction: row;
-  margin-bottom: 3.75rem;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .formacao-academica-i {
