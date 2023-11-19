@@ -8,7 +8,6 @@
   margin: 0 auto;
   padding: 6rem 0rem;
   color: #ffffff;
-  /* overflow-x: auto; */
 }
 
 .formacao-conteudo {
@@ -19,7 +18,6 @@
 }
 
 .formacao-titulo {
-  border: 1px solid green;
   display: inline-block;
   text-transform: uppercase;
   color: #bebeba;
